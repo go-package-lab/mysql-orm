@@ -1,4 +1,4 @@
-package go-package-lab-mysql
+package mysqlOrm
 
 import (
 	"database/sql"
