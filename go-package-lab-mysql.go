@@ -1,4 +1,4 @@
-package mysqlOrm
+package mysql-orm
 
 import (
 	"database/sql"
