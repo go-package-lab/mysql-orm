@@ -1,7 +1,7 @@
 package main
 
 import (
-	DB "github.com/go-package-lab/mysql-orm"
+	DB "mysql-orm"
 	"fmt"
 	"log"
 	"os"
