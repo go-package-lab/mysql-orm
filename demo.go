@@ -1,4 +1,4 @@
-package main
+package test
 
 import (
 	DB "mysql-orm"
@@ -40,7 +40,7 @@ func init() {
 		os.Exit(1)
 	}
 }
-func main() {
+func Testmain() {
 	defer db1.Close()
 
 	datas := make(DB.DataStruct)
