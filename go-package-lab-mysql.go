@@ -234,15 +234,11 @@ func (config *DbConfig) Close() error {
 }
 
 func Format2String(datas map[string]interface{}, key string) string {
-	if datas[key] == nil {
-		return ""
-	}
-	ba := []byte{}
-	data := datas[key].([]uint8)
-	for _, b := range data {
-		ba = append(ba, byte(b))
-	}
-	return string(ba)
+        if datas[key] == nil {
+                return ""
+        }
+        data := datas[key].([]uint8)
+        return string(data)
 }
 
 func (config *DbConfig) BatchInsert(table string, datas []DataStruct) (num int64, err error) {
